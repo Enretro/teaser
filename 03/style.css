@@ -242,9 +242,6 @@ section:last-child {
 }
 
 @media all and (min-width: 602px) and (max-width: 800px) {
-  #headshot {
-    display: none;
-  }
 
   .keySkills {
     -moz-column-count: 2;
@@ -258,10 +255,6 @@ section:last-child {
     width: 95%;
     margin: 10px auto;
     min-width: 280px;
-  }
-
-  #headshot {
-    display: none;
   }
 
   #name,
