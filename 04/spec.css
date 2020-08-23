@@ -22,3 +22,11 @@ h1 {
   /*object-fit: fill;*/
   /*object-position: top left;*/
 }
+
+a{
+  color: #a1a0a0;
+}
+
+footer{
+  text-align: center;
+}
