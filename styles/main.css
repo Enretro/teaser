@@ -41,13 +41,6 @@ figcaption p {
   color: hsl(000, 0%, 83%);
 }
 
-
-
-header a {
-  text-decoration: none;
-  box-shadow: none;
-}
-
 ul li a {
   text-decoration: none;
   box-shadow: none;
@@ -69,23 +62,9 @@ li {
   list-style: none;
 }
 
-.logo img {
-  width: 48x;
-}
-
-h1,
 ul {
-  margin: 0;
-  color: white;
-  font-family: "Sedgwick Ave", cursive;
-}
-
-h1 a span {
   color: var(--en-text);
-}
-
-header * {
-  color: white;
+  font-family: "Sedgwick Ave", cursive;
 }
 
 a:hover {
@@ -101,11 +80,6 @@ img {
   ______NAVBAR______
 ______________________*/
 
-body{
-  margin: 0;
-  padding: 0;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -113,11 +87,18 @@ body{
   color: white;
   background: var(--en-prime);
   border-bottom: 3px solid var(--en-text);
+  padding: 1em;
+  font-family: "Sedgwick Ave", cursive;
 }
 
 .brand-title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: .5rem;
+  color: var(--en-text);
+}
+
+.brand-title span {
+  color: #fff;
 }
 
 .navbar-links ul {
@@ -140,13 +121,14 @@ body{
 .navbar-links li:hover {
   transform: rotate(-3deg);
 }
+
 .navbar-links li a:hover {
   color: var(--en-text);
 }
 
 .toggle-button {
   position: absolute;
-  top: .75rem;
+  top: 1.5rem;
   right: 1rem;
   display: none;
   flex-direction: column;
@@ -164,38 +146,38 @@ body{
 
 @media (max-width: 400px) {
   .toggle-button {
-      display: flex;
+    display: flex;
   }
 
   .navbar-links {
-      display: none;
-      width: 100%;
+    display: none;
+    width: 100%;
   }
 
   .navbar {
-      flex-direction: column;
-      align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .navbar-links ul {
-      width: 100%;
-      flex-direction: column;
+    width: 100%;
+    flex-direction: column;
   }
 
   .navbar-links li {
-      text-align: center;
+    text-align: center;
   }
 
   .navbar-links li:hover {
-      transform: none;
+    transform: none;
   }
 
   .navbar-links li a {
-      padding: .5rem 1rem;
+    padding: .5rem 1rem;
   }
 
   .navbar-links.active {
-      display: flex;
+    display: flex;
   }
 }
 
@@ -349,18 +331,23 @@ footer ul li a {
 
 @media only screen and (min-width: 29.8125rem
 
-    /* 477px */) {
+  /* 477px */
+) {
   .ft-main {
     justify-content: space-evenly;
   }
+
+
 }
 
 @media only screen and (min-width: 77.5rem
 
-    /* 1240px */) {
+  /* 1240px */
+) {
   .ft-main {
     justify-content: space-evenly;
   }
+
 }
 
 .ft-main-item {
@@ -394,8 +381,9 @@ input[type="submit"]:hover {
 }
 
 /* Footer social */
-.ft-social {
-  padding: 0 1.875rem 1.25rem;
+.ft-social ul {
+  padding: 0;
+  margin: 0;
 }
 
 .ft-social-list {
@@ -412,20 +400,25 @@ input[type="submit"]:hover {
 
 /* Footer legal */
 .ft-legal {
-  padding: 0.9375rem 1.875rem;
   background: var(--en-prime);
+}
+
+.ft-legal ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .ft-legal-list {
   width: 100%;
-  display: grid;
-  align-items: center;
-  justify-content: center;
+  padding: 1rem;
+
 }
 
 .ft-legal-list li {
   margin: 0.125rem 0.625rem;
-  white-space: nowrap;
+
 }
 
 .fab {
